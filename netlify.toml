@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "/new.html"
+to = "/index.ejs"
 status = 200
