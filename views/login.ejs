@@ -1,0 +1,230 @@
+<nav class="navigation">
+  <img class="logo" src="/images/SA_Primary_Black_Lettering_CMYK_40795a05-689d-4bb9-95de-a4b1596bfaa0_110x.avif" width="55" height="55"  alt="">
+</nav>
+<div class="loginFormDiv">
+  <span class="iconClose"><ion-icon name="close-outline"></ion-icon></span>
+  <div class="formBox login">
+    <h2>Login</h2>
+    <div class="errorDiv">
+    <% if (messages.error) { %>
+        <%= messages.error  %>
+      <% }  %>
+      <div>
+    <form action="/login" method="POST">
+      <div class="inputBox">
+        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+        <input class="loginInput" type="email" id="email" name="email" required>
+        <label>Email</label>
+      </div>
+      <div class="inputBox">
+        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+        <input class="loginInput"  type="password" id="password" name="password" required>
+        <label>Password</label>
+      </div>
+      <div class="rememberForgot">
+        <label>
+          <input class="loginInputCheckBox" type="checkbox">
+          Remember me
+        </label>
+        <a href="">Forgot Password?</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="loginRegister">
+        <p>Don't have an account? <a href="/register" class="registerLink">Register</a></p>
+      </div>
+    </form>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    body {
+  
+  position: relative;
+  overflow-x: hidden;
+  background: black;
+  font-size: var(1.25rem);
+  color: white;
+  /*
+  padding: 10vw 0;
+  */
+  font-family: Kantumruy;
+  font-size: 18px;
+}
+
+.loginInput{
+  width: 150px;
+  height: 25px;
+}
+.loginInputCheckBox{
+  width: 10px;
+}
+.loginFormDiv{
+  margin-top: 15px;
+  margin: auto;
+  background-image: url("/images/Jibbing.jpeg") ;
+
+  background-position: -115px ;
+  position: relative;
+  width: 400px;
+  height: 440px;
+
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+.loginFormDiv .formBox{
+  margin: auto;
+  width: 100%;
+  padding: 40px 40px 40px 40px;
+}
+.loginFormDiv .formBox.login{
+transition: transform .18s ease;
+transform: translateX(0);
+
+}
+.loginFormDiv.active .formBox.login{
+  transition: none;
+  transform: translateX(-400px);
+
+}
+.loginFormDiv.active{
+  height: 520px;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.formBox h2{
+
+font-size: 2em;
+text-align: center;
+color:#162938;
+}
+.inputBox{
+position: relative;
+width: 100%;
+height: 50px;
+border-bottom: 2px solid #162938;
+margin:30px 0;
+}
+.inputBox label{
+position: absolute;;
+top:50%;
+left: 5px;
+transform: translateY(-50%);
+font-size: 1em;
+color:#162938;
+font-weight: 500;
+pointer-events: none;
+transition: .8s;
+}
+.inputBox input{
+width: 100%;
+height: 100%;
+background: transparent;
+border:none;
+outline: none;
+font-size: 1em;
+color:#162938;
+font-weight: 600;
+padding: 0 35px 0 5px;
+}
+.inputBox input:focus~label,
+.inputBox input:valid~label{
+top:-5px;
+}
+.inputBox .icon{
+
+position: absolute;
+right: 2px;
+font-size: 1.8em;
+color:darkslateblue;
+line-height: 57px;
+
+}
+.logo{
+filter: invert(100%);
+}
+nav{
+
+display: flex;
+position: relative;
+justify-content: start;
+align-items: center;
+font-size: 1.1em;
+text-decoration: none;
+font-weight: 500;
+margin-bottom: 20px;
+}
+.rememberForgot{
+  font-size: .9em;
+  font-weight: 500;
+  color:#162938;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.rememberForgot label input{
+  accent-color: #162938;
+}
+.rememberForgot a{
+  color:#162938;
+  text-decoration: none;
+}
+.rememberForgot a:hover{
+
+  text-decoration: underline;
+}
+.btn{
+  width: 100%;
+  height: 45px;
+  background: #162938;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+
+}
+.loginRegister{
+  font-size: .9em;
+  color:#162938;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.errorDiv{
+  color:#162938
+}
+.loginRegister p a{
+  color:#162938;
+  text-decoration: none;
+  font-weight: 600;
+}
+.loginRegister p a:hover{
+  text-decoration: underline;
+}
+.buttonLogin{
+  color:white;
+  width: 130px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid white; 
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: .9em;
+  font-weight: 500;
+  margin-left: 25px;
+}
+.buttonLogin:hover{
+  background:white ;
+  color: #162938
+
+}
+  </style>
