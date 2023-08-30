@@ -1,8 +1,4 @@
-/*
-if (process.env.NODE_ENV !== 'production'){
-    require('dotenv').config()
-}
-*/
+
 
 
 
@@ -33,7 +29,7 @@ app.use(flash())
 app.use(methodOverride('_method'))
 
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: 'secretstring',
     resave: false,
     saveUninitialized: false
 }))
