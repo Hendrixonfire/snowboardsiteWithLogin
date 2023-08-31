@@ -1003,6 +1003,14 @@ nav{
    padding: 0;
    margin: 0;
   }
+  .feature-grid{
+    width: 60rem;
+    left: min(calc(766px - 100vw) * -1, 0px);
+    transform: rotateY(55deg);
+  }
+  .feature-grid-container{
+    perspective: 512rem;
+  }
 
 }
 
