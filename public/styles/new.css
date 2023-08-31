@@ -953,7 +953,7 @@ nav{
  
 }
 @media (min-width: 1120px) {
-  .testimonialHover:hover {
+  .testimonial-grid:hover .testimonialHover {
     opacity: 0.1;
     background: white;
   }
