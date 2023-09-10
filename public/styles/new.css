@@ -1008,7 +1008,7 @@ nav{
 }
 @media (max-width: 687px) {
   .accordion-panel:has([aria-expanded="true"]) p {
-  font-size: 0.85rem;
+  font-size: .7em;
 }
  .selected-item-grid{
   max-width: 300px;
@@ -1027,7 +1027,17 @@ nav{
  .feature-grid-text .fs-700{
   font-size: 3.35rem;
  }
-}
+ .session-check-button{
+  font-size: .6em;
+ }
+ .accordion-panel  input{
+  font-size: .6em;
+ }
+ .session-time-join{
+  font-size: .6em;
+  grid-template-columns: 1fr 1fr 45px; 
+ }
+
 @media (max-width:390px){
   .container{
     overflow-x: hidden;
@@ -1071,6 +1081,8 @@ nav{
   width: 100%;
   object-fit: fill;
   z-index: -1;
+  pointer-events: none;
+  user-select: none;
 }
 .mac-book-air1-text02 {
   position: absolute;
