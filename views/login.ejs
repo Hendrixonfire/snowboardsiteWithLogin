@@ -39,12 +39,16 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <style>
     body {
-  
+  background-image: url("/images/Jibbing.jpeg") ;
   position: relative;
   overflow-x: hidden;
-  background: black;
+ 
   font-size: var(1.25rem);
   color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  background-size: cover;
   /*
   padding: 10vw 0;
   */
@@ -62,21 +66,18 @@
 .loginFormDiv{
   margin-top: 15px;
   margin: auto;
-  background-image: url("/images/Jibbing.jpeg") ;
-
-  background-position: -115px ;
   position: relative;
   width: 400px;
   height: 440px;
-
-  border: 2px solid rgba(255, 255, 255, .5);
+  border: 2px solid rgba(14, 12, 12, 0.5);
   border-radius: 20px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(255,255,255, 0.2);
+  backdrop-filter: blur(10px) ;
+  box-shadow: 10px 10px 30px rgba(0,0,0, 0.2);
  
-
 }
 .loginFormDiv .formBox{
   margin: auto;
@@ -144,7 +145,7 @@ top:-5px;
 position: absolute;
 right: 2px;
 font-size: 1.8em;
-color:darkslateblue;
+color:black;
 line-height: 57px;
 
 }
