@@ -859,7 +859,8 @@ line-height: 57px;
 }
 .logo{
   filter: invert(100%);
-  -webkit-filter: invert(100%);;
+  -webkit-filter: invert(100%);
+
 }
 nav{
  
